@@ -19,7 +19,7 @@ AddonNameForm.RibbonPage = nil;
 
 
 function Init()
-	if settings.scriptActive then
+		-- The line below makes this Addon only work on Loan Transactions.
 		if GetFieldValue("Transaction", "RequestType") == "Loan" then
 			interfaceMngr = GetInterfaceManager();
 			
@@ -37,7 +37,7 @@ function Init()
 			AddonNameForm.RibbonPage = BingForm.Form:GetRibbonPage("AddonName");
 			-- The GetClientImage("Search32") pulls in the magnifying glass icon.  There are other icons that can be used.
 			AddonNameForm.RibbonPage:CreateButton("Search", GetClientImage("Search32"), "Search", "AddonName");
-            AddonNameForm.Form:Show();
+            		AddonNameForm.Form:Show();
             
 			if settings.autoSearch then
 				Search();
@@ -45,6 +45,7 @@ function Init()
 		end
 	end
 end
+
 
 function Search()
 	if GetFieldValue("Transaction", "ISSN") ~= "" then
