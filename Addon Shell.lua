@@ -48,9 +48,5 @@ end
 
 
 function Search()
-	if GetFieldValue("Transaction", "ISSN") ~= "" then
-		AddonNameForm.Browser:Navigate("http://www.bing.com/search?q=" .. GetFieldValue("Transaction", "ISSN"));
-	else
-		AddonNameForm.Browser:Navigate("http://www.bing.com/search?q=" .. GetFieldValue("Transaction", "LoanTitle"));
-    end
+-- Add code here.
 end
