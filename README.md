@@ -1,4 +1,4 @@
 AddonsLibrary
 =============
 
-Code Examples to created ILLiad Addons
+Code Examples to create ILLiad Addons
