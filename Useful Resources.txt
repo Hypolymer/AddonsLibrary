@@ -1,5 +1,8 @@
 Below is a list of Resources for building ILLiad Addons:
 
+ILLiad Addons Directory:
+https://prometheus.atlas-sys.com/display/ILLiadAddons/ILLiad+Addons+Directory
+
 ILLiad Addons Technical Overview (Atlas):
 https://prometheus.atlas-sys.com/display/ILLiadAddons/ILLiad+Addon+Technical+Overview
 
