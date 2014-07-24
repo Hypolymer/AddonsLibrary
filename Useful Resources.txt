@@ -18,6 +18,9 @@ http://lua-users.org/wiki/
 Lua Strings Tutorial:
 http://lua-users.org/wiki/StringsTutorial
 
+String Library Tutorial:
+http://lua-users.org/wiki/StringLibraryTutorial
+
 Code Project:
 http://www.codeproject.com/
 
