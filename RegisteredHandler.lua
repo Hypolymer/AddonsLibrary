@@ -25,11 +25,11 @@ end
 
 function GoogleLoaded()
    if GetFieldValue("Transaction", "ISSN") ~= "" then
-      browser:SetFormValue("f", "as_isbn", GetFieldValue("Transaction", "ISSN"));
-      browser:SetFormValue("f", "as_brr", "1");
+	browser:SetFormValue("f", "as_isbn", GetFieldValue("Transaction", "ISSN"));
+	browser:SetFormValue("f", "as_brr", "1");
    else 
-      browser:SetFormValue("f", "as_epq", GetFieldValue("Transaction", "LoanTitle"));
-      browser:SetFormValue("f", "as_brr", "1");
+	browser:SetFormValue("f", "as_epq", GetFieldValue("Transaction", "LoanTitle"));
+	browser:SetFormValue("f", "as_brr", "1");
    end
-	 browser:ClickObject("btnG");
+ 	browser:ClickObject("btnG");
 end
