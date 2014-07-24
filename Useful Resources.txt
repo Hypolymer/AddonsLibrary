@@ -1,0 +1,22 @@
+Below is a list of Resources for building ILLiad Addons:
+
+ILLiad Addons Technical Overview (Atlas):
+https://prometheus.atlas-sys.com/display/ILLiadAddons/ILLiad+Addon+Technical+Overview
+
+Objects Overview List(Atlas):
+https://prometheus.atlas-sys.com/display/ILLiadAddons/Objects
+
+The Programming Language Lua:
+http://www.lua.org/
+
+Lua Users Wiki:
+http://lua-users.org/wiki/
+
+Lua Strings Tutorial:
+http://lua-users.org/wiki/StringsTutorial
+
+Code Project:
+http://www.codeproject.com/
+
+Stack Overflow:
+http://stackoverflow.com/
