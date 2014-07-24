@@ -1,7 +1,7 @@
--- This function is used when their is a form that needs to have text entered into it and a button needs to be clicked.
+-- This function is used when there is a form that needs to have text entered into it and a button needs to be clicked.
 
 
--- In the RegisteredPageHandler, the formExists value stays constant across Addons.
+-- In the RegisteredPageHandler, the "formExists" text stays constant across Addons.
 -- The second value below, "f", is the name of the form on the webpage.
 -- If a form with the name "f" exists on the page, it will run a function with the name of the third value.
 -- The forth value tells the Addon that this is not a critical operation and will not crash if it is incomplete.
