@@ -1,1 +1,2 @@
--- Add text
+-- Simply put, you can set the layout of your Addon by right clicking in the client browser and manipulating positions.
+-- The layout can be saved for the Addon.  The layout file will be within the Addon's folder.
