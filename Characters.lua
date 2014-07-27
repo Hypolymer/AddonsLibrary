@@ -5,20 +5,20 @@
 -- Variables are declared by using the word "local".
 -- Example:
 
-local myVariableName = "this can be a string, number, array"
+local myVariableName = "this can be a string, number, array";
 
 
 -- Concatenation (joining characters and strings together: ..
 -- Example:
 
-local myString = "This is " .. "the best string ever."
+local myString = "This is " .. "the best string ever.";
 
 
 -- Equality test (is equal to): ==
 -- Example test:
 
-local Author = "Bill Jones"
-local transactionAuthor = GetFieldValue("Transaction", "LoanAuthor")
+local Author = "Bill Jones";
+local transactionAuthor = GetFieldValue("Transaction", "LoanAuthor");
 
 if Author == transactionAuthor then
   interfaceMngr:ShowMessage("The Author is Bill Jones", "Transaction Information");
@@ -28,13 +28,13 @@ end
 
 -- Inequality test (is not equal to): ~=
 -- In this example, we are setting a variable called author to act as a placeholder for LoanAuthor or PhotoArticleAuthor.
-local transactionType = GetFieldValue("Transaction", "RequestType")
-local author = ""
+local transactionType = GetFieldValue("Transaction", "RequestType");
+local author = "";
 
 if transactionType ~= "Loan" then
-  author = GetFieldValue("Transaction", "PhotoArticleAuthor")
+  author = GetFieldValue("Transaction", "PhotoArticleAuthor");
 else
-  author = GetFieldValue("Transaction", "LoanAuthor")
+  author = GetFieldValue("Transaction", "LoanAuthor");
 end
   
 
