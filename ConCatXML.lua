@@ -1,3 +1,8 @@
+-- This method of concatenation makes it easy to break up lines of XML into human readable text.
+-- Each line appends an additional tag and value to the complete XML message.
+-- Each line of text begins and ends with a single quote.
+-- The semi-colon is only used at the very end when the string is complete.
+
 local cib = '';
 	cib = cib .. '<NCIPMessage version="http://www.niso.org/ncip/v1_0/imp1/dtd/ncip_v1_0.dtd">'
 	cib = cib .. '<CheckInItem>'
