@@ -27,3 +27,6 @@ GetFieldValue("Transaction", "PhotoJournalTitle");
 -- ISSN (ISSN or ISBN for a request)
 GetFieldValue("Transaction", "ISSN");
 
+
+-- A variable can be set to These values, or the values can be concatenated directly into a string.
+
