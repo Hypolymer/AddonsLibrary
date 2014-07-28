@@ -40,15 +40,15 @@ function Init()
 	DOAJForm.RibbonPage:CreateButton("Search Title", GetClientImage("Search32"), "SearchTitle", "DOAJ");
 	DOAJForm.RibbonPage:CreateButton("Phrase Search", GetClientImage("Search32"), "SearchPhrase", "DOAJ");
 		
-            DOAJForm.Form:Show();
+        DOAJForm.Form:Show();
             
-		if settings.autoSearch then
-			if settings.StartwithISxN and GetFieldValue("Transaction", "ISSN") ~= "" then
-				SearchISxN();
-			else
-        	 		SearchTitle();
-			end
+	if settings.autoSearch then
+		if settings.StartwithISxN and GetFieldValue("Transaction", "ISSN") ~= "" then
+			SearchISxN();
+		else
+        	 	SearchTitle();
 		end
+	end
 			 		          
 end
 
@@ -56,24 +56,24 @@ end
 
 function SearchISxN()
     if GetFieldValue("Transaction", "ISSN") ~= "" then
-	      DOAJForm.Browser:Navigate("http://www.doaj.org/doaj?func=search&template=&uiLanguage=en&query=" .. GetFieldValue("Transaction", "ISSN"));
-	  else
+    	DOAJForm.Browser:Navigate("http://www.doaj.org/doaj?func=search&template=&uiLanguage=en&query=" .. GetFieldValue("Transaction", "ISSN"));
+	else
         interfaceMngr:ShowMessage("ISxN is not available from request form", "Insufficient Information");
-	  end
+	end
 end
 
 function SearchPhrase()
     if GetFieldValue("Transaction", "RequestType") == "Loan" then  
-	      DOAJForm.Browser:Navigate("http://www.doaj.org/doaj?func=search&template=&uiLanguage=en&query=" .. "\"" .. doajmodstring1 .. "\"");
-	  else
-	      DOAJForm.Browser:Navigate("http://www.doaj.org/doaj?func=search&template=&uiLanguage=en&query=" .. "\"" .. doajmodstring2 .. "\"");
-	  end
+	 	DOAJForm.Browser:Navigate("http://www.doaj.org/doaj?func=search&template=&uiLanguage=en&query=" .. "\"" .. doajmodstring1 .. "\"");
+	else
+	   	DOAJForm.Browser:Navigate("http://www.doaj.org/doaj?func=search&template=&uiLanguage=en&query=" .. "\"" .. doajmodstring2 .. "\"");
+	end
 end
 
 function SearchTitle()
     if GetFieldValue("Transaction", "RequestType") == "Loan" then  
-	      DOAJForm.Browser:Navigate("http://www.doaj.org/doaj?func=search&template=&uiLanguage=en&query=" .. doajmodstring1);
-	  else
-	      DOAJForm.Browser:Navigate("http://www.doaj.org/doaj?func=search&template=&uiLanguage=en&query=" .. doajmodstring2);
-	  end
+	  	DOAJForm.Browser:Navigate("http://www.doaj.org/doaj?func=search&template=&uiLanguage=en&query=" .. doajmodstring1);
+	else
+	   	DOAJForm.Browser:Navigate("http://www.doaj.org/doaj?func=search&template=&uiLanguage=en&query=" .. doajmodstring2);
+	end
 end
