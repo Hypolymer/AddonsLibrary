@@ -15,37 +15,40 @@ local doajmodstring2 = string.gsub(GetFieldValue ("Transaction", "PhotoArticleTi
 
 
 function Init()
-		--if GetFieldValue("Transaction", "RequestType") == "Loan" then
-			interfaceMngr = GetInterfaceManager();
+
+	interfaceMngr = GetInterfaceManager();
 			
-			-- Create browser
-			DOAJForm.Form = interfaceMngr:CreateForm("DOAJ", "Script");
-			DOAJForm.Browser = DOAJForm.Form:CreateBrowser("DOAJ", "DOAJ", "DOAJ");
+	-- Create browser
+	DOAJForm.Form = interfaceMngr:CreateForm("DOAJ", "Script");
+	DOAJForm.Browser = DOAJForm.Form:CreateBrowser("DOAJ", "DOAJ", "DOAJ");
 			
-			-- Hide the text label
-			DOAJForm.Browser.TextVisible = false;
+	-- Hide the text label
+	DOAJForm.Browser.TextVisible = false;
 			
-			--Suppress Javascript errors
-			DOAJForm.Browser.WebBrowser.ScriptErrorsSuppressed = true;
+	--Suppress Javascript errors
+	DOAJForm.Browser.WebBrowser.ScriptErrorsSuppressed = true;
 			
-			-- Since we didn't create a ribbon explicitly before creating our browser, it will have created one using the name we passed the CreateBrowser method.  We can retrieve that one and add our buttons to it.
-			-- The line below houses the buttons
-			DOAJForm.RibbonPage = DOAJForm.Form:GetRibbonPage("DOAJ");
-			-- Each of the names in quotes after "DOAJForm.RibbonPage:CreateButton(" name the button.
-			-- The second to last value in quotes is the name of the function that is called when the button is clicked.
-			DOAJForm.RibbonPage:CreateButton("Search ISxN", GetClientImage("Search32"), "SearchISxN", "DOAJ");
-			DOAJForm.RibbonPage:CreateButton("Search Title", GetClientImage("Search32"), "SearchTitle", "DOAJ");
-			DOAJForm.RibbonPage:CreateButton("Phrase Search", GetClientImage("Search32"), "SearchPhrase", "DOAJ");
+	-- Since we didn't create a ribbon explicitly before creating our browser, 
+	-- it will have created one using the name we passed the CreateBrowser method.  
+	-- We can retrieve that one and add our buttons to it.
+	
+	-- The line below houses the buttons
+	DOAJForm.RibbonPage = DOAJForm.Form:GetRibbonPage("DOAJ");
+	-- Each of the names in quotes after "DOAJForm.RibbonPage:CreateButton(" name the button.
+	-- The second to last value in quotes is the name of the function that is called when the button is clicked.
+	DOAJForm.RibbonPage:CreateButton("Search ISxN", GetClientImage("Search32"), "SearchISxN", "DOAJ");
+	DOAJForm.RibbonPage:CreateButton("Search Title", GetClientImage("Search32"), "SearchTitle", "DOAJ");
+	DOAJForm.RibbonPage:CreateButton("Phrase Search", GetClientImage("Search32"), "SearchPhrase", "DOAJ");
 		
             DOAJForm.Form:Show();
             
-			if settings.autoSearch then
-			    if settings.StartwithISxN and GetFieldValue("Transaction", "ISSN") ~= "" then
-				    SearchISxN();
-			    else
-            SearchTitle();
-				end
+		if settings.autoSearch then
+			if settings.StartwithISxN and GetFieldValue("Transaction", "ISSN") ~= "" then
+				SearchISxN();
+			else
+        	 		SearchTitle();
 			end
+		end
 			 		          
 end
 
