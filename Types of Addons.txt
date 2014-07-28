@@ -1,1 +1,22 @@
--- Add text.
+Client Side Addon
+Installed in the ILLiad\Addons directory
+Run within the Client using a ribbon and buttons
+Error logs appear in C:\Users\username\Documents\ILLiad\Logs\ILLiadClient.txt
+Refreshed using Manage Addons -> Reset Cache
+
+System Addon 
+Installed in the ILLiad\Addons directory
+Run within the Client through Registered Event Handlers
+Error logs appear in C:\Users\username\Documents\ILLiad\Logs\ILLiadClient.txt
+Refreshed by restarting ILLiad
+
+Server Addon
+Installed through Customization manager and saved in a database
+Run outside of the Client on the server at specific time intervals
+Error logs appear in C:\Users\username\Documents\ILLiad\Logs\CustomizationManager.txt
+Refreshed by increasing the version number in the Config window
+
+
+
+
+
