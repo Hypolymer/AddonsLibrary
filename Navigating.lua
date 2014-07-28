@@ -1,7 +1,7 @@
--- You will add this below the Shell.
+-- You will add this below the Shell in a function.
 -- The function below allows you to navigate to a webpage.
 
 
 function Search()
-  browser:Navigate("https://www.google.com/");	
+  AddonNameForm.Browser:Navigate("https://www.google.com/");	
 end
