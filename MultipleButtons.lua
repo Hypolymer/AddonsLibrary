@@ -77,4 +77,4 @@ function SearchTitle()
 	   	DOAJForm.Browser:Navigate("http://www.doaj.org/doaj?func=search&template=&uiLanguage=en&query=" .. doajmodstring2);
 	end
 end
-x
+xx
