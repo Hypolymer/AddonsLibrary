@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>AddonName</Name>
+  <Author>Put Your Name Here</Author>
+  <Version>1.0</Version>
+  <Active>true</Active>
+  <Type>Addon</Type>
+  <Description>Searches Bing for ISSN or Title for loans and articles.</Description>
+  <Forms>
+    <Form>FormRequest</Form>
+  </Forms>
+  <Settings>
+    <Setting name="AutoSearch" value="true" type="boolean">
+      <Description>Determines whether or not the search should be done automatically when the request is opened.</Description>
+    </Setting>
+  </Settings>
+  <Files>
+    <File>AddonName.lua</File>
+  </Files>
+</Configuration>
