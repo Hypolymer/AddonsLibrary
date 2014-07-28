@@ -1,1 +1,32 @@
--- Add text
+Every Addon needs a config.xml file.
+
+The <Name> tag contains the name of the Addon.
+
+The <Author> tag contains the name of the author of the Addon.
+
+The <Version> tag contains the version number of the Addon.  
+It is good practice to increment your version number as you make modifications to your Addon and share it.
+For the very first version, the <Version> value could be 1.0, or 1.0.0, or 1.0.0.0
+
+The <Active> tag contains a boolean value.  When set to true, the Addon will run automatically.
+
+The <Type> tag contains the type of Addon.  Client Addons use the type "Addon".
+
+The <Description> tag contains a description of the function(s) of the Addon.
+
+The <Form> tag is nested within the <Forms> tag.
+Client Addons use the "FormRequest" value for the <Form> tag.
+
+Within the <Settings> tag, each setting will reside.
+Each setting has a <Setting> tag, a name, a value, and a type.
+The name can be anything, but it should be intuitive.
+The value relates to the type.
+If the type is "boolean" then the value can be true or false.
+If the type is "string" then the value can be any alphanumeric string (no special characters).
+You can create as many settings as you like.
+In order to reference the settings in the Lua file, type the following line:
+settings.settingName = GetSetting("settingName");
+
+The <File> tag is nested within the <Files> tag.
+The value within the <File> tag needs to match the name of the Lua file it's associated with.
+Example:  <File>AddonName.lua</File>
