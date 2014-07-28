@@ -9,8 +9,8 @@
 -- The handlers are set prior to navigating to the page
 
 function Search()
-	browser:RegisterPageHandler("formExists", "f", "GoogleLoaded", false);
-	browser:Navigate("http://books.google.com/advanced_book_search");	
+	AddonNameForm.Browser:RegisterPageHandler("formExists", "f", "GoogleLoaded", false);
+	AddonNameForm.Browser:Navigate("http://books.google.com/advanced_book_search");	
 end
 
 
@@ -25,11 +25,11 @@ end
 
 function GoogleLoaded()
    if GetFieldValue("Transaction", "ISSN") ~= "" then
-	browser:SetFormValue("f", "as_isbn", GetFieldValue("Transaction", "ISSN"));
-	browser:SetFormValue("f", "as_brr", "1");
+	AddonNameForm.Browser:SetFormValue("f", "as_isbn", GetFieldValue("Transaction", "ISSN"));
+	AddonNameForm.Browser:SetFormValue("f", "as_brr", "1");
    else 
-	browser:SetFormValue("f", "as_epq", GetFieldValue("Transaction", "LoanTitle"));
-	browser:SetFormValue("f", "as_brr", "1");
+	AddonNameForm.Browser:SetFormValue("f", "as_epq", GetFieldValue("Transaction", "LoanTitle"));
+	AddonNameForm.Browser:SetFormValue("f", "as_brr", "1");
    end
- 	browser:ClickObject("btnG");
+ 	AddonNameForm.Browser:ClickObject("btnG");
 end
