@@ -37,3 +37,4 @@ String_find.lua
 Types of Addons.txt
 Useful Resources.txt
 Working with the Config.txt
+d
