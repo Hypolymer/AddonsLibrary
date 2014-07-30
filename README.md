@@ -3,7 +3,9 @@ AddonsLibrary
 
 Code Examples to create ILLiad Addons
 
-Description of Repository Contents
+Description of Repository Contents:
+
+Types of Addons.txt
 
 Addon Example:
 AddonShell.lua,
@@ -34,6 +36,5 @@ Editing and Checking Your Code.txt,
 Layout.lua,
 ModifyingStrings.lua,
 String_find.lua,
-Types of Addons.txt,
 Useful Resources.txt,
 Working with the Config.txt
