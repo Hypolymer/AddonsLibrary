@@ -26,3 +26,6 @@ http://www.codeproject.com/
 
 Stack Overflow:
 http://stackoverflow.com/
+
+Notepad++ (text editor):
+http://notepad-plus-plus.org/
