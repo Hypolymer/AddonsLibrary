@@ -11,6 +11,19 @@ Addon Example:
 AddonShell.lua,
 Config.xml
 
+Lua Code Descriptions:
+Characters.lua,
+ConCatXML.lua
+
+Useful Tools/String Modifier:
+AtlasHelpers.lua,
+Editing and Checking Your Code.txt,
+Layout.lua,
+ModifyingStrings.lua,
+String_find.lua,
+Useful Resources.txt,
+Working with the Config.txt
+
 Code/Function Examples:
 FormButtons.lua,
 MultipleRibbonButtons.lua,
@@ -25,16 +38,3 @@ SetFieldValue.lua
 Executing Commands:
 AddNote.lua,
 PopupMessage.lua
-
-Lua Code Descriptions:
-Characters.lua,
-ConCatXML.lua
-
-Useful Tools/String Modifier:
-AtlasHelpers.lua,
-Editing and Checking Your Code.txt,
-Layout.lua,
-ModifyingStrings.lua,
-String_find.lua,
-Useful Resources.txt,
-Working with the Config.txt
