@@ -15,6 +15,6 @@
     </Setting>
   </Settings>
   <Files>
-    <File>AddonName.lua</File>
-  </Files>
+    <File>AddonShell.lua</File>
+  </Files
 </Configuration>
