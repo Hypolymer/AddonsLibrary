@@ -25,7 +25,7 @@ function Init()
 			
     -- Create browser
     AddonNameForm.Form = interfaceMngr:CreateForm("AddonName", "Script");
-    AddonNameForm.Browser = BingForm.Form:CreateBrowser("AddonName", "AddonName", "AddonName");
+    AddonNameForm.Browser = AddonNameForm.Form:CreateBrowser("AddonName", "AddonName", "AddonName");
 			
     -- Hide the text label
     AddonNameForm.Browser.TextVisible = false;
@@ -34,7 +34,7 @@ function Init()
     AddonNameForm.Browser.WebBrowser.ScriptErrorsSuppressed = true;
 			
     -- Since we didn't create a ribbon explicitly before creating our browser, it will have created one using the name we passed the CreateBrowser method.  We can retrieve that one and add our buttons to it.
-    AddonNameForm.RibbonPage = BingForm.Form:GetRibbonPage("AddonName");
+    AddonNameForm.RibbonPage = AddonNameForm.Form:GetRibbonPage("AddonName");
     -- The GetClientImage("Search32") pulls in the magnifying glass icon.  There are other icons that can be used.
     AddonNameForm.RibbonPage:CreateButton("Search", GetClientImage("Search32"), "Search", "AddonName");
     AddonNameForm.Form:Show();
@@ -48,5 +48,5 @@ end
 
 
 function Search()
--- Add code here.
+--add code here
 end
