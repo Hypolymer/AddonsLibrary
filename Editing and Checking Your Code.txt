@@ -1,0 +1,9 @@
+Make sure after each change, you save the file and complete the following actions:
+1.  Open System -> Manage Addons
+2.  Click "Reset Cache"
+
+Check for missing semi-colons!
+
+Go to C:\Users\YourUserName\Documents\ILLiad\Logs\ILLiadClient.txt to check for reported errors
+
+Make sure that you have this option enabled:  "Options -> Enable Debug Logging"
