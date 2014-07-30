@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Addon Name</Name>
+  <Author>Put Your Name Here</Author>
+  <Version>1.0</Version>
+  <Active>true</Active>
+  <Type>Addon</Type>
+  <Description>Searches Something for ISSN or Title for loans and articles.</Description>
+  <Forms>
+    <Form>FormRequest</Form>
+  </Forms>
+  <Settings>
+    <Setting name="AutoSearch" value="true" type="boolean">
+      <Description>Determines whether or not the search should be done automatically when the request is opened.</Description>
+    </Setting>
+	<Setting name="FriendsURL" value="" type="string">
+	  <Description>Determines the URL the Addon navigates to.</Description>
+	</Setting>
+  </Settings>
+  <Files>
+    <File>AddonShell.lua</File>
+  </Files>
+</Configuration>
