@@ -36,36 +36,36 @@ function Init()
     -- Since we didn't create a ribbon explicitly before creating our browser, it will have created one using the name we passed the CreateBrowser method. We can retrieve that one and add our buttons to it.
     AddonNameForm.RibbonPage = AddonNameForm.Form:GetRibbonPage("AddonName");
     -- The GetClientImage("Search32") pulls in the magnifying glass icon. There are other icons that can be used.
-    AddonNameForm.RibbonPage:CreateButton("Search", GetClientImage("Search32"), "Search", "AddonName");
+    -- AddonNameForm.RibbonPage:CreateButton("Search", GetClientImage("Search32"), "Search", "AddonName");
 	-- Here we are adding a new button to the ribbon
 	AddonNameForm.RibbonPage:CreateButton("Search ISxN", GetClientImage("Search32"), "SearchISxN", "AddonName");
-	AddonNameForm.RibbonPage:CreateButton("Search Title", GetClientImage("Search32"), "SearchTitle", "AddonName");
+	AddonNameForm.RibbonPage:CreateButton("Search Title", GetClientImage("Fraud32"), "SearchTitle", "AddonName");
 	AddonNameForm.RibbonPage:CreateButton("Phrase Search", GetClientImage("Search32"), "SearchPhrase", "AddonName");
     AddonNameForm.Form:Show();
             
 if settings.autoSearch then
-Search();
+SearchISxN();
 end
     end
 -- end
 
-function Search()
+-- function Search()
 	
-	local author = "";
-	if GetFieldValue("Transaction", "LoanAuthor") ~= "" then	
-		author = GetFieldValue("Transaction", "LoanAuthor");
-	elseif GetFieldValue("Transaction", "PhotoArticleAuthor") ~= "" then
-		author = GetFieldValue("Transaction", "PhotoArticleAuthor");
-	end
-		AddonNameForm.Browser:Navigate("https://www.google.com/?gws_rd=ssl#q=" .. author);
-		interfaceMngr:ShowMessage("The message that appears to the users", "Whatever is on top of the window");
-end
+	-- local author = "";
+	-- if GetFieldValue("Transaction", "LoanAuthor") ~= "" then	
+		-- author = GetFieldValue("Transaction", "LoanAuthor");
+	-- elseif GetFieldValue("Transaction", "PhotoArticleAuthor") ~= "" then
+		-- author = GetFieldValue("Transaction", "PhotoArticleAuthor");
+	-- end
+		-- AddonNameForm.Browser:Navigate("https://www.google.com/?gws_rd=ssl#q=" .. author);
+		-- interfaceMngr:ShowMessage("The message that appears to the users", "Whatever is on top of the window");
+-- end
 
-function SecondFunction()
-interfaceMngr:ShowMessage("Did this work?  SecondFunction", "Whatever is on top of the window");
+-- function SecondFunction()
+-- interfaceMngr:ShowMessage("Did this work?  SecondFunction", "Whatever is on top of the window");
 
 
-end
+-- end
 
 
 function SearchISxN()
