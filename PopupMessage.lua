@@ -1,6 +1,6 @@
--- Include this line within a function to display information in a text box.
--- The first line in quotes is the message to the user.
--- The second line in quotes is the name/heading of the MessageBox.
+-- Include this line within a function to display information in a popup window.
+-- The first line in quotes is the message to the user that displays in the center of the dialog window.
+-- The second line in quotes is the name/heading of the MessageBox window.
 
 interfaceMngr:ShowMessage("First Line in Quotes - user message.", "Title of popup box");
 
