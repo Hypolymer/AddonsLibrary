@@ -7,3 +7,6 @@ Check for missing semi-colons!
 Go to C:\Users\YourUserName\Documents\ILLiad\Logs\ILLiadClient.txt to check for reported errors
 
 Make sure that you have this option enabled:  "Options -> Enable Debug Logging"
+
+Use a program like BareTail to check logs in realtime
+BareTail Address (as of 2/21/2015) - http://www.baremetalsoft.com/baretail/
