@@ -17,8 +17,6 @@ AddonNameForm.Form = nil;
 AddonNameForm.Browser = nil;
 AddonNameForm.RibbonPage = nil;
 
-
-
 function Init()
     -- The line below makes this Addon only work on Loan Transactions.
     -- if GetFieldValue("Transaction", "RequestType") == "Loan" then
@@ -49,26 +47,8 @@ function Init()
 if settings.autoSearch then
 SearchISxN();
 end
-    end
--- end
+end
 
--- function Search()
-	
-	-- local author = "";
-	-- if GetFieldValue("Transaction", "LoanAuthor") ~= "" then	
-		-- author = GetFieldValue("Transaction", "LoanAuthor");
-	-- elseif GetFieldValue("Transaction", "PhotoArticleAuthor") ~= "" then
-		-- author = GetFieldValue("Transaction", "PhotoArticleAuthor");
-	-- end
-		-- AddonNameForm.Browser:Navigate("https://www.google.com/?gws_rd=ssl#q=" .. author);
-		-- interfaceMngr:ShowMessage("The message that appears to the users", "Whatever is on top of the window");
--- end
-
--- function SecondFunction()
--- interfaceMngr:ShowMessage("Did this work?  SecondFunction", "Whatever is on top of the window");
-
-
--- end
 function NewURL()
 		AddonNameForm.Browser:Navigate(settings.FriendsURL);
 
